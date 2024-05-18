@@ -49,7 +49,7 @@ export const htmlElements = {
     header: {
         dataHeaderSearch: document.querySelector('[data-header-search]'),
         dataHeaderSetting: document.querySelector('[data-header-settings]')
-    }
+    },
     search: {
         dataSearchAuthor: document.querySelector('[data-search-authors]'),
         dataSearchCancel: document.querySelector('[data-search-cancel]'),
