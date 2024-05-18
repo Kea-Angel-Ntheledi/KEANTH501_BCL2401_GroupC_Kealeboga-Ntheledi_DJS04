@@ -10,4 +10,4 @@ connectedCallback() {
     const title = this.getAttribute('title');
     const subtitle = this.getAttribute('subtitle');
     const description = this.attribute('description');
-}
+} 
