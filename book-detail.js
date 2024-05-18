@@ -33,3 +33,14 @@ this.shadowRoot.innerHTML = `
           color: #333;
         }
       </style>
+       <div class="detail-overlay">
+          <img src="${image}" />
+          <h2>${title}</h2>
+          <h3>${subtitle}</h3>
+          <p>${description}</p>
+        </div>
+      `;
+    }
+  }
+  
+  customElements.define('book-detail', BookDetail);
