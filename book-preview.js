@@ -1,16 +1,16 @@
 class BookPreview extends HTMLElement {
-  constructor() {
-    super();
-    this.attachShadow({ mode: "open" });
-  }
-
-  connectedCallback() {
-    const author = this.getAttribute("author");
-    const id = this.getAttribute("data-preview");
-    const image = this.getAttribute("image");
-    const title = this.getAttribute("title");
-
-    this.shadowRoot.innerHTML = `
+    constructor() {
+      super();
+      this.attachShadow({ mode: 'open' });
+    }
+  
+    connectedCallback() {
+      const author = this.getAttribute('author');
+      const id = this.getAttribute('data-preview');
+      const image = this.getAttribute('image');
+      const title = this.getAttribute('title');
+  
+      this.shadowRoot.innerHTML = `
         <style>
           .preview {
             display: flex;
@@ -42,7 +42,8 @@ class BookPreview extends HTMLElement {
           </div>
         </button>
       `;
+    }
   }
-}
-
-customElements.define("book-preview", BookPreview);
+  
+  customElements.define('book-preview', BookPreview);
+  

@@ -1,16 +1,16 @@
 class BookDetail extends HTMLElement {
-  constructor() {
-    super();
-    this.attachShadow({ mode: "open" });
-  }
-
-  connectedCallback() {
-    const image = this.getAttribute("image");
-    const title = this.getAttribute("title");
-    const subtitle = this.getAttribute("subtitle");
-    const description = this.getAttribute("description");
-
-    this.shadowRoot.innerHTML = `
+    constructor() {
+      super();
+      this.attachShadow({ mode: 'open' });
+    }
+  
+    connectedCallback() {
+      const image = this.getAttribute('image');
+      const title = this.getAttribute('title');
+      const subtitle = this.getAttribute('subtitle');
+      const description = this.getAttribute('description');
+  
+      this.shadowRoot.innerHTML = `
         <style>
           .detail-overlay {
             display: flex;
@@ -37,7 +37,8 @@ class BookDetail extends HTMLElement {
           <p>${description}</p>
         </div>
       `;
+    }
   }
-}
-
-customElements.define("book-detail", BookDetail);
+  
+  customElements.define('book-detail', BookDetail);
+  
