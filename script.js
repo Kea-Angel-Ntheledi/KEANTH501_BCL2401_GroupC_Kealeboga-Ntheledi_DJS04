@@ -1,4 +1,7 @@
 import { books, authors, genres, BOOKS_PER_PAGE } from "./data.js";
+import { renderBookPreviews, setupGenreOptions, setupAuthorOptions, setThemeProperties, applyPreferredTheme, showMoreButton, handleListItemOnClick } from "./helper.js";
+import { htmlElements } from "./elements.js";
+
 
 let page = 1;
 let matches = books;
