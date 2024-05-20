@@ -4,7 +4,7 @@ import { books, authors, genres, BOOKS_PER_PAGE } from "./data.js";
 let page = 1;
 let matches = books;
 
-// Function to get DOM elements
+// Function to get DOM elements 
 const getElement = (selector) => document.querySelector(selector);
 
 // Function to create and append book previews
